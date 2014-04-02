@@ -1,0 +1,28 @@
+{
+	"uri" : "http://rsvpme.com/lists/adamsgig",
+	"name" : "adam sands gig",
+	"description" : "come and watch adam play drums with his new band",
+	"creator" : { "email" : "chrisbrooksbank@gmail.com"},
+	"createddate" : "2014-02-4T06:00:00.000Z",
+	"revisionnumber": 1,
+    "admins" : [ {"email" : "chrisbrooksbank@gmail.com"} ,
+				 {"email" : "lizziecrichton@gmail.com"} ],
+	"opendate" : "2014-04-21T19:00:00.000Z",
+	"closedate" : "2014-05-2119:00:00.000Z",
+	"maxattendees" : 6,
+	"rsvprestrictions" : { "maxguestcount" : 1,
+		                   "sex" : "all"
+						   ,"minage" : 21
+						   ,"maxage" : 100
+						   ,"minimumreputation": 0
+						 },
+	"yesrsvps" : [ 
+		{ "name" : "Jo", 
+		  "email" : "jo@foo.com", 
+		  "rsvp date" : "2014-04-21T19:10:00.000Z",
+		  "revision" : 1} ],
+	"norsvps" : [],
+	"yesrsvpuri" : "https://facebook.com/events/adamsgig/yes?email={email}" 
+	"norsvpuri" : "https://facebook.com/events/adamsgig/yes?email={email}" 
+	"yesrsvpquestions" : [ {"question" : "whats your mobile number", "mandatory" : "no"} ]	  
+}
