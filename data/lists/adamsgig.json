@@ -1,28 +1,40 @@
 {
-	"uri" : "http://rsvpme.com/lists/adamsgig",
+	"URI" : "http://rsvpme.com/lists/adamsgig",
 	"name" : "adams gig",
 	"description" : "come and watch adam play drums with his new band",
 	"creator" : { "email" : "chris@gmail.com"},
-	"createddate" : "2014-02-4T06:00:00.000Z",
-	"revisionnumber": 1,
+	"createdDate" : "2014-02-4T06:00:00.000Z",
+	"revision": 1,
     "admins" : [ {"email" : "chris@gmail.com"} ,
 				 {"email" : "lizzie@gmail.com"} ],
-	"opendate" : "2014-04-21T19:00:00.000Z",
-	"closedate" : "2014-05-2119:00:00.000Z",
-	"maxattendees" : 6,
-	"rsvprestrictions" : { "maxguestcount" : 1,
-		                   "sex" : "all"
-						   ,"minage" : 21
-						   ,"maxage" : 100
-						   ,"minimumreputation": 0
-						 },
-	"yesrsvps" : [ 
+	"RSVPOpenDate" : "2014-04-21T19:00:00.000Z",
+	"RSVPCloseDate" : "2014-05-2119:00:00.000Z",
+	"eventURI" : "http://rsvpme.com/events/adamsgig",
+	"eventStartDate" : "2014-05-2119:00:00.000Z",
+	"eventEndDate" : "2014-05-2121:00:00.000Z",
+	"eventLocation" : [ { "Country" : "UK", "City": "London", "VenueName" :"Jacks Bar"} ], 
+	"keywords" : [  "Drums", "Bands", "London"], 
+	"tickets" : [ {"name" : "Free",
+				   "revision" : 1,
+	               "description" : "Free",
+				   "count" : 6,
+				   "cost" : 0,
+	               "restrictions" : {"sex" : "All"
+				 		   			 ,"minAge" : 21
+						   			 ,"maxAge" : 100
+						   			 ,"minimumReputation": 0
+						   			 ,"waitingList": "Yes"
+				  },} ],
+	"yeses" : [ 
 		{ "name" : "Jo", 
 		  "email" : "jo@foo.com", 
-		  "rsvp date" : "2014-04-21T19:10:00.000Z",
+		  "ticket" : "Free",
+		  "ticketRevision" : 1,
+		  "RSVPDate" : "2014-04-21T19:10:00.000Z",
 		  "revision" : 1} ],
-	"norsvps" : [],
-	"yesrsvpuri" : "https://facebook.com/events/adamsgig/yes?email={email}" 
-	"norsvpuri" : "https://facebook.com/events/adamsgig/yes?email={email}" 
-	"yesrsvpquestions" : [ {"question" : "whats your mobile number", "mandatory" : "no"} ]	  
+	"nos" : [],
+	"onYesRSVP" : ["https://interestedthirdparty.com/events/adamsgig/yes?email={email}{ticketname}"], 
+	"onNoRSVP" : ["https://interestedthirdparty.com/events/adamsgig/no?email={email}"], 
+	"onWaitingListRSVP": ["https://interestedthirdparty.com/events/adamsgig/waiting?email={email}"], 
+	"yesQuestions" : [ {"question" : "whats your mobile number", "mandatory" : "no"} ]	  
 }
