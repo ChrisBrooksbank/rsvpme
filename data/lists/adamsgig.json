@@ -5,7 +5,7 @@
 	"creator" : { "email" : "chris@gmail.com"},
 	"createdDate" : "2014-02-4T06:00:00.000Z",
 	"revision": 1,
-    "admins" : [ {"email" : "chris@gmail.com"} ,
+	"admins" : [ {"email" : "chris@gmail.com"} ,
 				 {"email" : "lizzie@gmail.com"} ],
 	"RSVPOpenDate" : "2014-04-21T19:00:00.000Z",
 	"RSVPCloseDate" : "2014-05-2119:00:00.000Z",
@@ -16,14 +16,14 @@
 	"keywords" : [  "Drums", "Bands", "London"], 
 	"tickets" : [ {"name" : "Free",
 				   "revision" : 1,
-	               "description" : "Free",
+				   "description" : "Free",
 				   "count" : 6,
 				   "cost" : 0,
-	               "restrictions" : {"sex" : "All"
-				 		   			 ,"minAge" : 21
-						   			 ,"maxAge" : 100
-						   			 ,"minimumReputation": 0
-						   			 ,"waitingList": "Yes"
+				   "restrictions" : {"sex" : "All"
+									 ,"minAge" : 21
+									 ,"maxAge" : 100
+									 ,"minimumReputation": 0
+									 ,"waitingList": "Yes"
 				  },} ],
 	"yeses" : [ 
 		{ "name" : "Jo", 
