@@ -1,0 +1,15 @@
+{
+    "URI" : "http://rsvpme.com/lists/people/chrisatfoodotcom",
+	"emails" : ["chris@foo.com"],
+	"revision" : 1,
+	"name" : "Chris Brooksbank",
+	"dateOfBirth" : "1966-08-1102:00:00.000Z",
+	"sex" : "male",
+	"createdDate" : "2014-05-2119:00:00.000Z",
+	"yeses" : [ { "uri" : "http://rsvpme.com/lists/adamsgig"
+	              , "rsvpDate" : "2014-05-2119:00:00.000Z"} ],
+	"nos" : [],
+	"noShows" : [],
+	"reputation" : {"score" : 0 
+	                , "lastupdated" : "2014-05-2119:00:00.000Z"}              
+}
