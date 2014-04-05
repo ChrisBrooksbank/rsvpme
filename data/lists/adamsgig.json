@@ -29,8 +29,9 @@
 		  "RSVPDate" : "2014-04-21T19:10:00.000Z",
 		  "revision" : 1} ],
 	"nos" : [],
-	"onYesRSVP" : ["https://interestedthirdparty.com/v1/events/adamsgig/yes?email={email}{ticketname}"], 
-	"onNoRSVP" : ["https://interestedthirdparty.com/v1/events/adamsgig/no?email={email}"], 
-	"onWaitingListRSVP": ["https://interestedthirdparty.com/v1/events/adamsgig/waiting?email={email}"], 
+	"onYesRSVP" : [ {"href" : "https://interestedthirdparty.com/v1/events/adamsgig/yes",
+	                 "method" : "post", "postdata" : "email={email},ticket={ticketname}"}], 
+	"onNoRSVP" : [ {"href" : "https://interestedthirdparty.com/v1/events/adamsgig/no"}], 
+	"onWaitingListRSVP": ["https://interestedthirdparty.com/v1/events/adamsgig/waiting"], 
 	"yesQuestions" : [ {"question" : "whats your mobile number", "mandatory" : "no"} ]	  
 }

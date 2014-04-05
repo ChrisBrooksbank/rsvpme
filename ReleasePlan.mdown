@@ -1,0 +1,78 @@
+# Release Plan
+
+## Version 0.1 
+
+initial version of API. Assume nodejs and restify module. Mongodb in cloud for persistance.
+
+API supports :
+
+URL							Method		Description
+/rsvplists/id   			POST        adds a new list, data passed as JSON
+/rsvplists					GET			gets list of all rsvp lists in JSON format, paginated
+/rsvplists/id				GET			gets information on specified list
+/rsvplists/id    			DELETE		deleres specified list
+
+persistance is via a mongoDB.
+No pluggable architecture.
+
+No authentication - person href is simply passed and not checked.
+Nothing is checked, except that list href is unique.
+
+No website.
+
+## Version 0.2			
+adds to API : 
+
+/rsvplists/id/rsvps/personid 	POST		adds a new rsvp
+/rsvplists/id/rsvps				GET			returns a list of all rsvps for given list, paginated
+/rsvplists/id/rsvps/personid	GET			returns information on a specific RSVP for a specific list
+/rsvplists/id/rsvp/personid		PUT			updates a existing RSVP
+/rsvplists/id/rsvp/personid     DELETE      deletes a existing RSVP
+
+## Version 0.3
+adds to API :
+
+Abiity to search for rsvp lists, by text in name, description. By keyword, by date, by location.
+
+Add unit tests and ensure these are always run.
+
+## Version 0.4
+
+Initial version of reputation engine.
+Ensuring that peoples reputations are tracked.
+Python ??
+
+## Version 0.5
+
+Add authentication, security.
+
+## Version 0.6
+
+Clean up rough edges, refactor as needed, ensure reasonable error handling
+
+## Version 0.7 
+
+Create a very basic web site which talks to API.
+
+## Version 0.8
+
+Update website. Make look nice.
+
+Host somewhere so accessable by anyone.
+
+
+
+## Version 0.9 Beta release
+
+Ask for testers.
+Fix bugs, most requested changes.
+
+further releases 0.91 e.t.c
+
+## Version 1.0 First Release
+
+## Version 2.0 
+
+Add pluggable persistance layer, add firebase in box
+
+Requested features e.t.c.
